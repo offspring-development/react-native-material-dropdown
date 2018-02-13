@@ -47,10 +47,6 @@ export default StyleSheet.create({
     }),
   },
 
-  item: {
-    textAlign: 'left',
-  },
-
   scroll: {
     flex: 1,
     borderRadius: 2,

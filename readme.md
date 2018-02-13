@@ -2,18 +2,14 @@
 [npm-url]: https://npmjs.com/package/react-native-material-dropdown
 [license-badge]: https://img.shields.io/npm/l/react-native-material-dropdown.svg?colorB=448aff
 [license-url]: https://raw.githubusercontent.com/n4kz/react-native-material-dropdown/master/license.txt
-[codeclimate-badge]: https://img.shields.io/codeclimate/maintainability/n4kz/react-native-material-dropdown.svg
-[codeclimate-url]: https://codeclimate.com/github/n4kz/react-native-material-dropdown
 [example-url]: https://user-images.githubusercontent.com/2055622/27727487-591a807a-5d87-11e7-89f6-f31a442db0c6.gif
 [textinput]: https://facebook.github.io/react-native/docs/textinput.html#props
-[touchable]: https://facebook.github.io/react-native/docs/touchablewithoutfeedback.html#props
 [textfield]: https://github.com/n4kz/react-native-material-textfield#properties
 
 # react-native-material-dropdown
 
 [![npm][npm-badge]][npm-url]
 [![license][license-badge]][license-url]
-[![codeclimate][codeclimate-badge]][codeclimate-url]
 
 Material dropdown with consistent behaviour on iOS and Android
 
@@ -26,7 +22,6 @@ Material dropdown with consistent behaviour on iOS and Android
 * Customizable font size, colors and animation duration
 * Dynamic dropdown size and position
 * Configurable visible item count
-* RTL support
 * Pure javascript implementation
 
 ## Installation
@@ -79,22 +74,18 @@ class Example extends Component {
  itemCount         | Dropdown visible item count                   |   Number | 4
  itemPadding       | Dropdown item vertical padding                |   Number | 8
  itemTextStyle     | Dropdown item text styles                     |   Object | -
- dropdownMargins   | Dropdown margins                              |   Object | { min: 8, max: 16 }
- data              | Dropdown item data                            |    Array | []
+ data              | Dropdown item data                            |   Object | -
  value             | Selected value                                |   String | -
  containerStyle    | Styles for container view                     |   Object | -
  pickerStyle       | Styles for item picker view                   |   Object | -
  shadeOpacity      | Shade opacity for dropdown items              |   Number | 0.12
  rippleOpacity     | Opacity for ripple effect                     |   Number | 0.54
  rippleInsets      | Insets for ripple on base component           |   Object | { top: 16, bottom: -8 }
- rippleCentered    | Ripple on base component should be centered   |  Boolean | false
  renderBase        | Render base component                         | Function | -
  renderAccessory   | Render text field accessory                   | Function | -
- valueExtractor    | Extract value from item (args: item, index)   | Function | ({ value }) => value
- labelExtractor    | Extract label from item (args: item, index)   | Function | ({ label }) => label
  onChangeText      | Selection callback (args: value, index, data) | Function | -
 
-Other [TextField][textfield], [TextInput][textinput] and [TouchableWithoutFeedback][touchable] properties will also work
+Other [TextField][textfield] and [TextInput][textinput] properties will also work
 
 ## Methods
 
@@ -120,4 +111,4 @@ npm run ios # or npm run android
 
 BSD License
 
-Copyright 2017-2018 Alexander Nazarov. All rights reserved.
+Copyright 2017 Alexander Nazarov. All rights reserved.
